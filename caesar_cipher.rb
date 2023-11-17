@@ -4,8 +4,8 @@ def caesar_cipher(unencrypted_text, shift)
 
   unencrypted_text.each_char do |letter|
     if alphabet.include?(letter.downcase)
-  index = alphabet.index(letter.downcase)
-  puts "#{index}: #{letter}"
+      index = alphabet.index(letter.downcase)
+      puts "#{index}: #{letter}"
 
     end
   end 
