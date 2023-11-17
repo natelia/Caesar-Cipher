@@ -1,23 +1,14 @@
-def caesar_cipher(text, shift)
-  result = ""
+def caesar_cipher(unencrypted_text, shift)
+  encrypted_text = ""
+  alphabet = ("a".."z").to_a
 
-text.each_char do |char|
+  unencrypted_text.each_char do |letter|
+    if alphabet.include?(letter.downcase)
+  index = alphabet.index(letter.downcase)
+  puts "#{index}: #{letter}"
 
-
-
-shifted_char = 
-
-
-result = shifted_char
-end
-result
+    end
+  end 
 end
 
-puts "Enter the text you want to encrypt:"
-text = gets.chomp
-
-puts "Enter how much to shift (a positive integer):"
-shift = gets.chomp
-
-encrypted_text = caesar_cipher(text, shift)
-puts "The encrypted text is: #{encrypted_text}"
+caesar_cipher("dupa", 2)
