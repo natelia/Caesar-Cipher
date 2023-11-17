@@ -6,9 +6,13 @@ def caesar_cipher(unencrypted_text, shift)
     if alphabet.include?(letter.downcase)
       index = alphabet.index(letter.downcase)
       puts "#{index}: #{letter}"
-
+      shifted_index = index + shift
+      shifted_letter = alphabet[shifted_index]
+      puts "#{shifted_index}: #{shifted_letter}" 
+      encrypted_text += shifted_letter.to_s
     end
   end 
+  encrypted_text
 end
-
-caesar_cipher("dupa", 2)
+encrypted_text = caesar_cipher("kupa", 10)
+puts encrypted_text
