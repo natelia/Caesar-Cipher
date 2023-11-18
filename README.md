@@ -1,0 +1,1 @@
+The Caesar Cipher is a basic encryption technique that shifts each letter in the plaintext by a fixed number of positions down the alphabet.
